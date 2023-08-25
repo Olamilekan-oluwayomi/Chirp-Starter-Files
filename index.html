@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assets/Twitter (Blue).svg"
+    />
+    <link rel="stylesheet" href="./public/output.css" />
+    <title>Twiter</title>
+  </head>
+  <body class="bg-gray-100">
+    <!--navbar-->
+    <div class="container mx-auto">
+      <nav class="md:flex md:items-center md:justify-between">
+        <div class="logo flex items-center justify-between">
+          <h1
+            class="font-primary text-blue-500 text-3xl font-semibold italic m-3 cursor-pointer"
+          >
+            Chirp.
+          </h1>
+          <span class="text-3xl cursor-pointer md:hidden block mx-3">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        <div class="menu">
+          <ul
+            class="text-2xl md:text-xl md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto pl-4 md:pl-0 opacity-0 md:opacity-100 top-[-400px] transition-all ease-in duration-500"
+          >
+            <li class="mx-4 my-3 md:my-0">
+              <a class="hover:text-blue-400" href="/">Home</a>
+            </li>
+            <li class="mx-4 my-3 md:my-0">
+              <a class="hover:text-blue-400" href="/">Pricing</a>
+            </li>
+            <li class="mx-4 my-3 md:my-0">
+              <a class="hover:text-blue-400" href="/">FAQ</a>
+            </li>
+
+            <button
+              class="text-sm md:mx-5 bg-blue-400 flex py-3 px-6 text-white rounded-lg hover:py-4 duration-500"
+            >
+              <img class="mx-2" src="./Assets/Twitter.svg" alt="" /> Sign In
+              With Twitter
+            </button>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container mx-auto">
+      <div
+        class="main1 mt-10 flex flex-col-reverse md:flex-row md:items-center md:justify-between pb-16"
+      >
+        <div class="left md:mr-80 mt-10 md:mt-0">
+          <h1 class="font-primary text-5xl font-bold ml-3 md:ml-2 mb-5">
+            Twitter analytics taken to a whole new level.
+          </h1>
+          <p class="font-primary ml-3 md:ml-2 text-lg mb-5">
+            Chirp is a suite of Twitter analytics that will help you better
+            understand your audience, which tweets they like, and most
+            importantly,when they are the most active on Twitter.
+          </p>
+          <div class="md:flex items-center">
+            <button
+              class="text-sm md:mx-2 w-full md:w-auto bg-blue-400 flex justify-center py-3 px-6 text-white rounded-lg hover:py-4 duration-500"
+            >
+              <img class="mx-2" src="./Assets/Twitter.svg" alt="" /> Sign In
+              With Twitter
+            </button>
+            <a
+              class="text-lg font-primary font-bold md:ml-3 flex items-center text-blue-400 ml-36 mt-5 md:mt-0"
+              href="/"
+              >Learn more<ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="profileimage mt-8 relative flex mb-4">
+            <img class="-mr-5" src="./Assets/userAvatar01.svg" alt="" />
+            <img class="-mr-5" src="./Assets/userAvatar02.svg" alt="" />
+            <img class="-mr-5" src="/Assets/userAvatar03.svg" alt="" />
+            <img class="-mr-5" src="./Assets/userAvatar05.svg" alt="" />
+            <img class="-mr-5" src="./Assets/userAvatar06.svg" alt="" />
+            <img class="-mr-5" src="./Assets/userAvatar07.svg" alt="" />
+            <img class="-mr-5" src="./Assets/userAvatar08.svg" alt="" />
+            <img class="-mr-5" src="/Assets/userAvatar09.svg" alt="" />
+          </div>
+          <p class="font-primary opacity-70 font-medium ml-1">
+            Join <span class="text-blue-400">195</span> others who have analyzed
+            thier followers and scheduled
+            <span class="text-blue-400">1342</span> tweets!
+          </p>
+        </div>
+
+        <div class="right md:mr-7">
+          <img
+            class="md:object-scale-down md:h-auto md:w-96"
+            src="./Assets/Hero Image (Desktop View).png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-white pt-10 pb-10">
+      <div class="container mx-auto">
+        <h1 class="font-primary font-bold text-3xl ml-2">
+          Features that helps you <br />
+          Tweet smarter.
+        </h1>
+        <div class="md:flex gap-10 mt-6 md:mx-28 ml-5">
+          <div class="box1 border-2 p-4 mb-5 md:mb-0">
+            <img class="w-14 mb-3" src="./Assets/graph.jpg" alt="" />
+            <h3 class="font-primary text-lg font-bold">Analytics</h3>
+            <p class="font-primary">
+              We constantly monitor your audience as it grows--so you can Tweet
+              when your followers are most likely to be online and ready to
+              engage your content.
+            </p>
+          </div>
+          <div class="box2 border-2 p-4">
+            <img class="w-14 mb-3" src="./Assets/smile.png" alt="" />
+            <h3 class="font-primary text-lg font-bold">Smart Analyser</h3>
+            <p class="font-primary">
+              Chirp automatically recognizes your follower's most active time
+              and automatically sendsyou notifications if you're missing out on
+              an oppurtunity.
+            </p>
+          </div>
+        </div>
+        <div class="md:flex gap-10 mt-6 md:mx-28 ml-5">
+          <div class="box1 border-2 p-4 mb-5 md:mb-0">
+            <img class="w-14 mb-3" src="./Assets/schedule.jpg" alt="" />
+            <h3 class="font-primary text-lg font-bold">
+              Scheduled Your Tweets
+            </h3>
+            <p class="font-primary">
+              Quality tweets drive tons of engagement. With Chirp, you can write
+              tweets in an advance and schedule them when your audience is most
+              likely <br />
+              to read.
+            </p>
+          </div>
+          <div class="box2 border-2 p-4">
+            <img class="w-14 mb-3" src="./Assets/dark.png" alt="" />
+            <h3 class="font-primary text-lg font-bold">Dark Mode</h3>
+            <p class="font-primary">
+              Friendly on the eyes, no matter what time you write your Tweets.
+              All colors are chosen to make sure your eyes are at ease at all
+              times.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-blue-300 pt-10">
+      <div class="container mx-auto">
+        <h1 class="font-primary font-bold text-3xl ml-2 mb-7">
+          What our customer say
+        </h1>
+        <div>
+          <div class="md:flex md:gap-6 md:justify-center ml-4 md:ml-0 pb-14">
+            <div class="box1 bg-white p-6 w-fit h-fit mb-5 rounded-lg">
+              <div class="flex items-center">
+                <div class="name flex items-center mr-32">
+                  <img
+                    class="mr-4 w-12"
+                    src="./Assets/userAvatar01.svg"
+                    alt=""
+                  />
+                  <div>
+                    <h3 class="font-primary font-bold text-lg">Sara May</h3>
+                    <p>@Sara_may</p>
+                  </div>
+                </div>
+                <img src="./Assets/Twitter (Blue).svg" alt="" />
+              </div>
+              <p class="my-5 font-primary">
+                I just tried out @Chirp and it's <br />
+                amazing, love all the analytics i can see.
+              </p>
+              <div class="end flex">
+                <span class="flex items-center mr-36"
+                  ><img class="mr-2" src="./Assets/Like.svg" alt="" />2</span
+                >
+                <p class="ml-2">March 2, 2021</p>
+              </div>
+            </div>
+            <div class="box2 bg-white p-5 w-fit mb-5 rounded-lg">
+              <div class="flex items-center">
+                <div class="name flex items-center mr-32">
+                  <img
+                    class="mr-4 w-12"
+                    src="./Assets/userAvatar04.svg"
+                    alt=""
+                  />
+                  <div>
+                    <h3 class="font-primary font-bold text-lg">Jack Scott</h3>
+                    <p>@Jackscott_</p>
+                  </div>
+                </div>
+                <img src="./Assets/Twitter (Blue).svg" alt="" />
+              </div>
+              <p class="my-5 font-primary">
+                I initially started using Chirp to <br />
+                support the co-founder as i <br />
+                personally knew him, but after <br />
+                having tried it out fo a few weeks, <br />
+                i can genuinely say this changed my <br />
+                Twitter game.
+              </p>
+              <div class="end flex">
+                <span class="flex items-center mr-36"
+                  ><img class="mr-2" src="./Assets/Like.svg" alt="" />32</span
+                >
+                <p class="ml-5">March 2, 2021</p>
+              </div>
+            </div>
+            <div class="box3 bg-white p-4 w-fit h-fit rounded-lg">
+              <div class="flex items-center">
+                <div class="name flex items-center mr-32">
+                  <img
+                    class="mr-4 w-12"
+                    src="./Assets/userAvatar08.svg"
+                    alt=""
+                  />
+                  <div>
+                    <h3 class="font-primary font-bold text-lg">Jessica May</h3>
+                    <p>@jmay98</p>
+                  </div>
+                </div>
+                <img src="./Assets/Twitter (Blue).svg" alt="" />
+              </div>
+              <p class="my-5 font-primary">
+                Absolutely love everything about <br />
+                Chirp, from the design to how <br />
+                everything works smothly.
+              </p>
+              <div class="end flex">
+                <span class="flex items-center mr-36"
+                  ><img class="mr-2" src="./Assets/Like.svg" alt="" />221</span
+                >
+                <p class="ml-5">March 2, 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col justify-center items-center">
+      <h1 class="font-primary font-bold text-center text-3xl mb-4 mt-10">
+        One simple price plan.
+      </h1>
+      <p class="font-primary text-center text-lg mb-8">
+        Start growing your Twitter account by analyzing your follower's
+        patterns.
+      </p>
+      <div
+        class="border-2 rounded-lg p-6 m-8 w-fit flex flex-col bg-orange-100"
+      >
+        <div class="border-b-2 mb-5">
+          <h4 class="font-primary">Monthly</h4>
+          <p class="font-primary font-bold text-4xl mb-5">
+            $9<sub class="font-light text-sm">/mo</sub>
+          </p>
+        </div>
+        <div class="main border-b-2 mb-5">
+          <div class="flex mb-5">
+            <img class="mr-3" src="./Assets/Checkmark.svg" alt="" />
+            <p>Unlimited* Scheduled tweets and threads.</p>
+          </div>
+          <div class="flex mb-5">
+            <img class="mr-3" src="./Assets/Checkmark.svg" alt="" />
+            <p>Schedule up to 3 weeks in advance.</p>
+          </div>
+          <div class="flex mb-5">
+            <img class="mr-3" src="./Assets/Checkmark.svg" alt="" />
+            <p>Real-time audience analytics tracking up to 5k followers.</p>
+          </div>
+        </div>
+        <button
+          class="text-sm md:mx-2 w-full md:w-auto bg-blue-400 flex justify-center py-3 px-6 text-white rounded-lg hover:py-4 duration-500"
+        >
+          <img class="mx-2" src="./Assets/Twitter.svg" alt="" /> Sign In With
+          Twitter
+        </button>
+      </div>
+    </section>
+    <footer class="bg-blue-200 py-5 md:bg-inherit">
+      <div class="container mx-auto">
+        <div class="md:bg-blue-300 md:mx-36 md:flex md:justify-around">
+          <h1
+            class="font-primary text-blue-500 text-3xl font-semibold italic md:m-3 cursor-pointer"
+          >
+            Chirp.
+          </h1>
+          <div class="flex items-center text-lg">
+            <img class="w-6" src="./Assets/Twitter (Black).svg" alt="" />
+            <p class="mx-6 text-xl"><a href="/">Privacy policy</a></p>
+            <p class="text-xl"><a href="/">Term of Use</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
